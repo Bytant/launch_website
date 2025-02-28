@@ -48,9 +48,9 @@ ScrollReveal().reveal(".header__content .header__btn", {
 });
 ScrollReveal().reveal(".header__content .socials", {
   ...scrollRevealOption,
-  delay: 2500,
+  delay: 2000,
 });
 ScrollReveal().reveal(".header__bar", {
   ...scrollRevealOption,
-  delay: 3000,
+  delay: 2000,
 });
