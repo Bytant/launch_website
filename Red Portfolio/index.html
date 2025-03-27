@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin Omaboe | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/230abe04ec.js" crossorigin="anonymous"></script>
+</head>
+<!---- Intro Section-->
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <p alt="logo" class="logo">Tech Jesus</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <!--<div class="heromypic">
+                    <img src="images/Untitled design.png" alt="" class="mypic">
+                </div>-->
+                <p class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    <span class="typewriter-text"></span><label for="">|</label></p>
+                <h1>Hi, I'm <span>Kelvin</span><br> Omaboe From Ghana</h1>               
+            </div>
+        </div>
+        
+    </div>
+
+<!--About section-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Untitled design.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A highly motivated and innovative Computer Science Student at the University of Cape Coast, passionate about 
+                        leveraging technology to solve real-world problems. Seeking opportunities to apply my skills in software 
+                        development, cyber security and User Experience while continuously learning and growing
+                         in the tech ecosystem. Committed to making a meaningful impact through innovation, teamwork, and problem-solving.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education </p>
+                         </div>
+
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span><strong id="tab-strong">UI/UX</strong><br> Figma, Canva, Adobe Creative Cloud </span></li>
+                                <li><span><strong id="tab-strong">Web Development</strong><br>HTML5/CSS/JavaScript/MySQL, Tailwind CSS, React.Js, Bootstrap </span></li>
+                                <li><span><strong id="tab-strong">App Development</strong><br>Flutter, Android Studio, IOnic,</span></li>
+                                <li><span><strong id="tab-strong">Game Development</strong><br>Unity, Pygame, Unreal Engine</span></li>
+                                <li><span><strong id="tab-strong">Cloud Computing</strong><br>AWS, GCP</span></li>
+                            </ul>
+                         </div>
+
+                         <div class="tab-contents" id="experience">
+                            <ul>        
+                                <li><span><strong id="tab-strong">Internship at Infromation Technology Department</strong> <br>General Headquarters, Burma Camp</span></li>
+                                <li><span><strong id="tab-strong">Built and Deployed over 15 Web Applications</strong><br> Bytant Innovative Group </span></li>
+                                <li><span><strong id="tab-strong">4 years of experience and self improvements from working on Personal Projects</strong></span></li>
+                            </ul>
+                         </div>
+
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span><strong id="tab-strong">University of Cape Coast</strong><br> B.Sc. Computer Science<br> 2022 - 2026 </span></li>
+                                <li><span><strong id="tab-strong">University Practice Senior High</strong><br> 2019 - 2022 </span></li>
+                                <li><span><strong id="tab-strong">Emmanuelo Daisy International School</strong><br>2012 - 2019 </span></li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-----SERVICES --> 
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I Do</h1>
+        <div class="services-list">
+           <div>
+            <i class="fa-solid fa-globe"></i>
+            <h2>Web Development</h2>
+            <p>I create dynamic, responsive, and visually appealing websites using HTML, CSS, and JavaScript.
+                 I specialize in modern frameworks like React, Tailwind CSS and Next.js, ensuring high performance and seamless user experiences.
+                  I also work with backend technologies 
+                like Node.js, Express, and databases such as MySQL and MongoDB to build full-stack web applications.</p>
+                 <a href="#portfolio">Learn More..</a>
+           </div> 
+
+           <div>
+            <i class="fa-solid fa-spray-can"></i>
+            <h2>UI/UX Design</h2>
+            <p>I believe that great design is the foundation of any successful digital product. I use tools like Figma and
+                 Adobe XD to design intuitive user interfaces and ensure a smooth user experience. My focus is on usability, 
+                 accessibility, 
+                and creating designs that not only look good but feel natural to interact with.</p>
+                 <a href="#portfolio">Learn More..</a>
+           </div>
+
+           <div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h2>App Development</h2>
+            <p>I develop mobile applications that are smooth, fast, and intuitive. Using Flutter and Dart,
+                 I build cross-platform apps with beautiful UI designs. I also work with Java and
+                 Kotlin for native Android development, ensuring optimal performance and deep integration with platform features. 
+                 </p>
+                 <a href="#portfolio">Learn More..</a>
+           </div>
+
+           <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>Cloud Computing</h2>
+            <p>Scalability and performance are crucial for any modern application, and I leverage cloud platforms 
+                like AWS and Google Cloud to deploy and manage applications efficiently. From setting
+                 up cloud storage to implementing serverless functions and CI/CD pipelines, 
+                I ensure applications are robust and scalable..</p>
+                 <a href="#portfolio">Learn More..</a>
+           </div>
+
+           <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Penetration Testing</h2>
+            <p>Security is a top priority in the digital world, and I am skilled in identifying 
+                vulnerabilities and securing systems. I use tools like Kali Linux, Metasploit, Nmap, and
+                 Burp Suite to conduct penetration testing and ethical hacking. My goal is to strengthen 
+                cybersecurity defenses and ensure applications and networks remain secure against threats..</p>
+                 <a href="#portfolio">Learn More..</a>
+           </div>
+
+           <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Game Development</h2>
+            <p>Gaming has always fascinated me, and I bring my ideas to life using Unity and Unreal Engine. 
+                I work with C# and Blueprints to build immersive gameplay mechanics, and I enjoy optimizing graphics 
+                and animations for a seamless experience.
+                 Whether it’s 2D or 3D, I love crafting interactive worlds that engage players.</p>
+                 <a href="#portfolio">Learn More..</a>
+           </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!---PROJECTS-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IMG_1137.JPG" alt="work1">
+                <div class="layer">
+                    <h3>Wig and Artificial Hair Website</h3>
+                    <p>An E-Commerce Wig Website for all</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_1138.JPG" alt="work2">
+                <div class="layer">
+                    <h3>Food Delivery Web App</h3>
+                    <p>A Responsive Food Deliver Web App</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_1139.JPG" alt="work2">
+                <div class="layer">
+                    <h3>PyGame Project</h3>
+                    <p>Working on a Cool Python Based Game</p>
+                         <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">View More</a>
+    </div>
+</div>
+
+<!---Contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>omaboekelvin2005@gmail.com</p>
+                <p><i class="fa-solid fa-share-nodes"></i>Social Media Handles</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kelvin-omaboe/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.link/75oudd" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.discord.com"><i class="fa-brands fa-discord" target="_blank"></i></a>
+                    <a href="https://github.com/technopath2005" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/theboy_kaey" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/techjesus_kaey"><i class="fa-brands fa-x-twitter" target="_blank"></i></a>
+                </div>
+                <a href="documents/My Resume.pdf" class="btn btn2" download>Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name..." required>
+                    <input type="email" name="Email" placeholder="Your Email..." required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">SUBMIT</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <button id="backToTop" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Kelvin Omaboe 2025</p>
+        
+    </div>
+</div>
+
+</body>
+</html>
