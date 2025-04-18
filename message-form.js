@@ -1,12 +1,8 @@
-// Get reference to the form
 const form = document.forms["submit-to-google-sheet"];
-
-// Your deployed Google Apps Script Web App URL (ends with /exec)
 const scriptURL = "https://script.google.com/macros/s/AKfycbziGqoS8HI29edqmJnCWxcr3-Nc7loHwVs49hTn81z_XN7RBeftIOrCUHuKvU6nhVeJMw/exec";
 
-// Handle form submission
 form.addEventListener("submit", (e) => {
-  e.preventDefault(); // prevent the default form behavior
+  e.preventDefault();  // prevent the default form behavior
 
   // Show "Loading..." (optional)
   const loading = form.querySelector(".loading");
@@ -25,12 +21,13 @@ form.addEventListener("submit", (e) => {
     method: "POST",
     body: formData
   })
-    .then(response => {
+    .then(response => response.json())  // Parse JSON response
+    .then(data => {
       loading.style.display = "none";
 
-      if (response.ok) {
+      if (data.result === "success") {
         successMessage.style.display = "block";
-        form.reset();
+        form.reset();  // Reset form after successful submission
       } else {
         errorMessage.style.display = "block";
         errorMessage.textContent = "Something went wrong. Please try again!";
