@@ -1,41 +1,24 @@
-const form = document.forms["submit-to-google-sheet"];
-const scriptURL = "https://script.google.com/macros/s/AKfycbwRxvSRiGgbOK9Z0rfxjO5QM7cske_CeNZgH9zf_4sAxGWYEyHtUDa5_IsT9je0xIT2GQ/exec";
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzSIVEiWpCr359DhPgRaJF-9CYh7qHBAiZaJWMqT4wsL48N-YjTmFsQpQHcO0Tj39oiUQ/exec';
+const form = document.getElementById('submit-to-google-sheet');
+const loading = document.querySelector('.loading');
+const successMessage = document.querySelector('.sent-message');
+const errorMessage = document.querySelector('.error-message');
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();  // prevent the default form behavior
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  loading.style.display = 'block';
+  successMessage.style.display = 'none';
+  errorMessage.textContent = '';
 
-  // Show "Loading..." (optional)
-  const loading = form.querySelector(".loading");
-  const successMessage = form.querySelector(".sent-message");
-  const errorMessage = form.querySelector(".error-message");
-
-  loading.style.display = "block";
-  successMessage.style.display = "none";
-  errorMessage.style.display = "none";
-
-  // Create a FormData object from the form
-  const formData = new FormData(form);
-
-  // Send the POST request
-  fetch(scriptURL, {
-    method: "POST",
-    body: formData
-  })
-    .then(response => response.json())  // Parse JSON response
-    .then(data => {
-      loading.style.display = "none";
-
-      if (data.result === "success") {
-        successMessage.style.display = "block";
-        form.reset();  // Reset form after successful submission
-      } else {
-        errorMessage.style.display = "block";
-        errorMessage.textContent = "Something went wrong. Please try again!";
-      }
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      loading.style.display = 'none';
+      successMessage.style.display = 'block';
+      form.reset();
     })
     .catch(error => {
-      loading.style.display = "none";
-      errorMessage.style.display = "block";
-      errorMessage.textContent = "Error: " + error.message;
+      loading.style.display = 'none';
+      errorMessage.textContent = 'There was an error submitting the form. Please try again!';
+      console.error('Error!', error.message);
     });
 });
