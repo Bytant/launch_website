@@ -10,7 +10,7 @@ form.addEventListener('submit', e => {
   successMessage.style.display = 'none';
   errorMessage.textContent = '';
 
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+  fetch(scriptURL, { method: 'POST', body: new FormData(form), mode:'no-cors' })
     .then(response => {
       loading.style.display = 'none';
       successMessage.style.display = 'block';
