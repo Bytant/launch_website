@@ -78,12 +78,6 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
 }
 
 .php-email-form .sent-message {
