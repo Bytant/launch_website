@@ -114,6 +114,7 @@
    */
   new PureCounter();
 
+
   /**
    * Init swiper sliders
    */

@@ -246,10 +246,14 @@ h6 {
     order: 1;
   }
 
+  .header .logo img{
+    max-height: 60px;
+  }
+
   .header .cta-btn {
     order: 2;
     margin: 0 15px 0 0;
-    padding: 6px 15px;
+    padding: 6px 10px;
   }
 
   .header .navmenu {
@@ -973,11 +977,11 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 32px;
+    font-size: 50px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
@@ -1269,6 +1273,13 @@ section,
   margin-bottom: 0;
 }
 
+#us-logo{
+  border-radius: 50%;
+  border-width: 5%;
+  border-color: rgb(255, 89, 0);
+  border-style: solid;
+}
+
 /*--------------------------------------------------------------
 # Services 2 Section
 --------------------------------------------------------------*/
@@ -1374,7 +1385,7 @@ section,
 }
 
 .testimonials .testimonial-item .stars i {
-  color: #ffc107;
+  color: #ff4a17;
   margin: 0 1px;
 }
 
