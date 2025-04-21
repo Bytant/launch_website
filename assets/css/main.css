@@ -896,6 +896,14 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+.zoom-icon {
+  transition: transform 0.3s ease;
+}
+
+.zoom-icon:hover {
+  transform: scale(1.1);
+}
+
 .hero .btn-watch-video {
   font-size: 16px;
   transition: 0.5s;
@@ -996,6 +1004,12 @@ section,
     }
     .hero #social1 i{
       font-size: 30px;
+    }
+
+    .hero .btn-get-started {
+      font-weight: 400;
+      font-size: 10px;
+      padding: 12px 5px;
     }
 }
 

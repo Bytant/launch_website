@@ -43,9 +43,18 @@
       <input type="text" class="search-input" placeholder="Type course code here..." oninput="filterOptions(this.value)">
       <select class="dropdown-select" onchange="if(this.value) window.location.href=this.value">
         <option value="">Select a Course</option>
-        <option value="/resources/guide.pdf">Beginner's Guide PDF</option>
-        <option value="/resources/tutorial.mp4">Video Tutorial</option>
-        <option value="/resources/whitepaper.pdf">Whitepaper</option>
+        <option value="/assets/resources/sample pdf.pdf">Sample Pdf</option>
+        <option value="#">CSC 101</option>
+        <option value="#">CSC 104</option>
+        <option value="#">ASP 204</option>
+        <option value="#">ABD 384</option>
+        <option value="#">CSC 372</option>
+        <option value="#">CSC 172</option>
+        <option value="#">CSC 176</option>
+        <option value="#">SHW 231</option>
+        <option value="#">CSC 001</option>
+        <option value="#">DHD 213</option>
+        <option value="#">CSC 121</option>
       </select>
     </div>
     <div id="suggestions" class="search-suggestions d-none"></div>
@@ -78,7 +87,7 @@
     const options = [
       { name: "Beginner's Guide PDF", url: "/resources/guide.pdf" },
       { name: "Video Tutorial", url: "/resources/tutorial.mp4" },
-      { name: "Whitepaper", url: "/resources/whitepaper.pdf" }
+      { name: "Whitepaper", url: "#" }
     ];
 
     function filterOptions(input) {
