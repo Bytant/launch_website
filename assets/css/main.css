@@ -920,6 +920,42 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+.hero #social1{
+  color: var(--contrast-color);
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  margin-top: 30%;
+  margin-right: 100px;
+}
+
+.hero #social1:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.hero #social2{
+  color: var(--contrast-color);
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  margin-top: 30%;
+}
+
+.hero #social2:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 50px;
@@ -928,6 +964,39 @@ section,
   .hero p {
     font-size: 17px;
   }
+
+  .hero #social2{
+  font-size: 9px;
+  color: var(--contrast-color);
+  font-weight: 400;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 4px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  margin-top: 30%;
+  }
+  .hero #social2 i{
+    font-size: 30px;
+  }
+
+  .hero #social1{
+    font-size: 9px;
+    color: var(--contrast-color);
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 4px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    margin-top: 30%;
+    margin-right: 30px;
+    }
+    .hero #social1 i{
+      font-size: 30px;
+    }
 }
 
 /*--------------------------------------------------------------
