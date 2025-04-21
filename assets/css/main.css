@@ -966,9 +966,9 @@ section,
   }
 
   .hero #social2{
-  font-size: 9px;
+  font-size: 12px;
   color: var(--contrast-color);
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 30px;
@@ -982,9 +982,9 @@ section,
   }
 
   .hero #social1{
-    font-size: 9px;
+    font-size: 12px;
     color: var(--contrast-color);
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: 1px;
     display: inline-block;
     padding: 10px 30px;
