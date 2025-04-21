@@ -864,6 +864,7 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  margin-top:100px;
 }
 
 .hero h2 {

@@ -1,10 +1,3 @@
-/**
-* Template Name: Dewi
-* Template URL: https://bootstrapmade.com/dewi-free-multi-purpose-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 (function() {
   "use strict";
@@ -208,3 +201,33 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+// home page social links bounce effect
+document.addEventListener("DOMContentLoaded", function() {
+  const socialIcons = [
+    document.querySelector("#social1 i"),
+    document.querySelector("#social2 i")
+  ];
+
+  function triggerBounce(icon) {
+    if (!icon) return;
+    icon.classList.add("fa-bounce");
+    // Remove the class after animation duration (~1s)
+    setTimeout(() => {
+      icon.classList.remove("fa-bounce");
+    }, 1000);
+  }
+
+  // Trigger bounce every 5 seconds
+  setInterval(() => {
+    socialIcons.forEach(icon => {
+      triggerBounce(icon);
+    });
+  }, 5000);
+
+  // Initial trigger on page load
+  socialIcons.forEach(icon => {
+    triggerBounce(icon);
+  });
+});
