@@ -36,7 +36,7 @@
             <a class="nav-links " href="index.html" id="home-link">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-links" href="#" id="tutorial-link">Tutorials</a>
+            <a class="nav-links" href="#youtube-section" id="tutorial-link">Tutorials</a>
           </li>
         </ul>
       </div>
@@ -93,16 +93,16 @@
     </div>
   </section>
 
-  <section class="youtube-section">
-    <div class="youtube-header">
-      <h2>🎥 Watch Us On YouTube</h2>
+  <section class="youtube-section" id="youtube-section">
+    <div class="youtube-header"> 
+      <div class="youtube-heading-box"><h2>🎥 Watch Us On YouTube</h2></div>
       <a href="https://www.youtube.com/@Bytants" class="btn-yt">Visit Channel</a>
     </div>
 
     <div class="search-bar">
       <input type="text" id="videoSearch" placeholder="Browse tutorial videos ... eg:CSC101" oninput="suggestVideos(this.value)">
       <button onclick="handleSearch()">Search</button>
-      <div class="suggestions" id="suggestions"></div>
+      <div class="suggestions" id="suggestion"></div>
     </div>
 
     <div class="youtube-videos" id="videoGrid">
@@ -118,7 +118,7 @@
     </div>
 
     <div class="like-subscribe">
-      <span>👍 Like us</span>
+      <span>👍 Like our videos</span>
       <span>🔔 Subscribe for updates</span>
     </div>
   </section>
@@ -127,7 +127,7 @@
     const apiKey = 'AIzaSyBPdC5gyXt-E0-OUMKyzXtqPot3VMsY7Mg';
     const channelId = 'UCwBXDv7hdZQ1PzCxiMvxXww';
     const videoGrid = document.getElementById('videoGrid');
-    const suggestionBox = document.getElementById('suggestions');
+    const suggestionBox = document.getElementById('suggestion');
     const searchInput = document.getElementById('videoSearch');
     const loadingSpinner = document.getElementById('loadingSpinner');
     let allVideos = [];
