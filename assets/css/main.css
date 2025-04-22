@@ -1391,31 +1391,22 @@ section,
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 100px;
+  width: 300px;
   border-radius: 50%;
   border: 6px solid color-mix(in srgb, var(--default-color), transparent 85%);
   margin: 0 auto;
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   margin: 10px 0 5px 0;
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
+  font-size: 15px;
   margin: 0 0 15px 0;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
-}
-
-.testimonials .testimonial-item .stars {
-  margin-bottom: 15px;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ff4a17;
-  margin: 0 1px;
 }
 
 .testimonials .testimonial-item .quote-icon-left,
