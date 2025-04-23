@@ -1,9 +1,10 @@
 :root {
   --primary-color: #ff4800;
   --secondary-color: #c910f2;
-  --hover-gradient-start: rgba(0, 87, 179, 0.51);
+  --hover-gradient-start: rgba(0, 87, 179, 0.514);
   --hover-gradient-end: #c910f267;
-  --navbar-bg-color: orangered;
+  --navbar-bg-color: rgba(52, 73, 94, 0.847);
+  --navbar-bg-color-hover: rgba(52, 73, 94, 0.42);
   --overlay-color: rgba(2, 2, 2, 0.38);
   --text-color-white: #ffffff;
   --text-color-white-transparent: rgba(255, 255, 255, 0.79);
@@ -156,7 +157,7 @@ body::before {
 }
 
 .navbar {
-  background-color: #2c3e50;
+  background-color: var(--navbar-bg-color);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   border-radius: 0;
@@ -165,7 +166,7 @@ body::before {
 }
 
 .navbar:hover {
-  background-color: #34495e;
+  background-color: var(--navbar-bg-color-hover);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
