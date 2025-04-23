@@ -1734,6 +1734,21 @@ section,
   background-color: var(--surface-color);
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff4a17 !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: black!important; /* or a hex value like #e91e63 */
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--accent-color) !important; /* make active one pop */
+  opacity: 1;
+}
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
