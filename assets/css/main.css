@@ -1655,9 +1655,14 @@ section,
 }
 
 .swiper-slide {
+  max-width: 100%;
   display: flex;
   justify-content: center;
-  padding-left: 2%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .swiper-slide .member {
@@ -1669,6 +1674,7 @@ section,
   border-radius: 10px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  margin: 0 auto; 
 
 }
 
@@ -1710,7 +1716,7 @@ section,
   margin-right: 8px;
   color: color-mix(in srgb, var(--default-color), transparent 70%);
   transition: color 0.3s;
-  padding-bottom: 50%;
+  padding-bottom: 40%;
 }
 
 .swiper-slide .member .social a:hover {
@@ -1724,7 +1730,7 @@ section,
   left: unset;
   right: unset;
   margin-top: -40px;
-  padding: 20px 10px;
+  padding: 20px 15px;
   background-color: var(--surface-color);
 }
 
