@@ -1085,6 +1085,11 @@ section,
   font-size: 16px;
 }
 
+.stats .stats-item span::after {
+  content: attr(data-purecounter-suffix);
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1642,6 +1647,82 @@ section,
 .team .member .social i {
   font-size: 16px;
   margin: 0 2px;
+}
+
+/* style for carousel mobile */
+.swiper {
+  padding: 20px 0 60px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide .member {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface-color);
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.swiper-slide .pic img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.swiper-slide .member-info {
+  position: relative;
+  padding: 20px 15px 60px;
+  background-color: var(--surface-color);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  flex-grow: 1;
+}
+
+.swiper-slide .member h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.swiper-slide .member span {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.swiper-slide .member .social {
+  margin-bottom: 10px;
+  padding-top: 18px; /* optional spacing */
+  display: flex;
+  gap: 8px;
+}
+
+.swiper-slide .member .social a {
+  margin-right: 8px;
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  transition: color 0.3s;
+}
+
+.swiper-slide .member .social a:hover {
+  color: var(--accent-color);
+}
+
+/* Adjust member info for grid view too */
+.team .member .member-info {
+  position: relative;
+  bottom: unset;
+  left: unset;
+  right: unset;
+  margin-top: -40px;
+  padding: 20px 15px;
+  background-color: var(--surface-color);
 }
 
 /*--------------------------------------------------------------

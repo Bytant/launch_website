@@ -26,6 +26,10 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -236,7 +240,7 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-emoji-smile color-blue flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="379" data-purecounter-duration="1" class="purecounter" data-purecounter-suffix="+"></span>
+                <span data-purecounter-start="0" data-purecounter-end="379" data-purecounter-suffix="+" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Volunteer Hours</p>
               </div>
             </div>
@@ -256,7 +260,7 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="fa-solid fa-laptop-code"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="4390" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="4390" data-purecounter-suffix="+" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Hours Of Coding</p>
               </div>
             </div>
@@ -266,7 +270,7 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-people color-pink flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-suffix="+" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Members</p>
               </div>
             </div>
@@ -276,179 +280,371 @@
 
       </div>
 
+      <script src="https://cdn.jsdelivr.net/npm/purecounterjs@1.5.0/dist/purecounter_vanilla.js"></script>
     </section><!-- /Stats Section -->
 
-        <!-- Team Section -->
-        <section id="team" class="team section light-background">
+ 
 
-          <!-- Section Title -->
-          <div class="container section-title" data-aos="fade-up">
-            <h2>Team</h2>
-            <p>CHECK OUR TEAM</p>
-          </div><!-- End Section Title -->
-    
-          <div class="container">
-    
-            <div class="row gy-5">
-    
-              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="member">
-                  <div class="pic"><img src="assets/img/team//1.png" class="img-fluid" alt=""></div>
-                  <div class="member-info">                    
-                      <h4>Omaboe Kelvin</h4>
-                      <a href="https://kelvin-omaboe.github.io/Love-Recipe/">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <span>Group Lead/ Developer</span>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter-x"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Team Member -->
-    
-              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="member">
-                  <div class="pic"><img src="assets/img/team/2.png" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h4>Henrietta Kumi</h4>
-                    <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <span>Deputy Group Lead/ Developer</span>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter-x"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Team Member -->
-    
-              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                  <div class="pic"><img src="assets/img/team/person1.jpeg" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h4>Karen Nayeram</h4>
-                    <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <span>Executive Secretary/Data Scientist</span>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter-x"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Team Member -->
-    
-              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                  <div class="pic"><img src="assets/img/team/5.png" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h4>Francis Amponsah</h4>
-                    <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <span>UI/UX Team Lead</span>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter-x"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Team Member -->
-    
-              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                  <div class="pic"><img src="assets/img/team/person1.jpeg" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h4>Godwin Datsomor</h4>
-                    <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <span>Developer</span>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter-x"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Team Member -->
-    
-              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                  <div class="pic"><img src="assets/img/team/4.png" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h4>Abigail Arthur</h4>
-                    <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <span>Data Science Team Lead</span>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter-x"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Team Member -->
-    
-              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                  <div class="pic"><img src="assets/img/team/person1.jpeg" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h4>Gideon Acheampong</h4>
-                    <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <span>Content Creators Team Lead</span>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter-x"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Team Member -->
-    
-              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                  <div class="pic"><img src="assets/img/team/person2.jpeg" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h4>Francis Asefua Sam</h4>
-                    <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <span>Developer</span>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter-x"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Team Member -->
-    
-              <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="member">
-                  <div class="pic"><img src="assets/img/team/3.png" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                    <h4>Merilyn</h4>
-                    <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    <span>Networking / Content Creator</span>
-                    <div class="social">
-                      <a href=""><i class="bi bi-twitter-x"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- End Team Member -->
-    
+        <!-- Team Section -->
+<section id="team" class="team section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Team</h2>
+    <p>CHECK OUR TEAM</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <!-- Swiper Slider for Mobile -->
+    <div class="swiper team-slider d-lg-none">
+      <div class="swiper-wrapper">
+
+        <!-- Member Slides -->
+        <!-- Just copy-paste the inner content for each member if you need more -->
+        <div class="swiper-slide">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/1.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Omaboe Kelvin</h4>
+              <a href="https://kelvin-omaboe.github.io/Love-Recipe/">View Personal Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Group Lead/ Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
             </div>
-    
           </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/2.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Henrietta Kumi</h4>
+              <a href="">View Personal Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Deputy Group Lead/ Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/person1.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Karen Nayeram</h4>
+              <a href="">View Personal Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Exe. Secretary/Data Scientist</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/5.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Francis Amponsah</h4>
+              <a href="">View Personal Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>UI/UX Team Lead</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/person1.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Godwin Datsomor</h4>
+              <a href="">View Personal Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/4.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Abigail Arthur</h4>
+              <a href="">View Personal Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Data Science Team Lead</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/person1.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Gideon Acheampong</h4>
+              <a href="">View Personal Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Content Creators Team Lead</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/person2.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Francis Asefua Sam</h4>
+              <a href="">View Personal Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/3.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Merilyn</h4>
+              <a href="">View Personal Portfolio <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Networking / Content Creator</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Swiper Navigation and Pagination -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div><!-- End Swiper -->
+
+    <!-- Grid for Desktop -->
+    <div class="row gy-5 d-none d-lg-flex">
+      <div class="row gy-5">
     
-        </section><!-- /Team Section -->
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team//1.png" class="img-fluid" alt=""></div>
+            <div class="member-info">                    
+                <h4>Omaboe Kelvin</h4>
+                <a href="https://kelvin-omaboe.github.io/Love-Recipe/">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Group Lead/ Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/2.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Henrietta Kumi</h4>
+              <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Deputy Group Lead/ Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/person1.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Karen Nayeram</h4>
+              <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Executive Secretary/Data Scientist</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/5.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Francis Amponsah</h4>
+              <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>UI/UX Team Lead</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/person1.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Godwin Datsomor</h4>
+              <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/4.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Abigail Arthur</h4>
+              <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Data Science Team Lead</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/person1.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Gideon Acheampong</h4>
+              <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Content Creators Team Lead</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/person2.jpeg" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Francis Asefua Sam</h4>
+              <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Developer</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <div class="pic"><img src="assets/img/team/3.png" class="img-fluid" alt=""></div>
+            <div class="member-info">
+              <h4>Merilyn</h4>
+              <a href="">View Personal Portfolio   <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <span>Networking / Content Creator</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Team Member -->
+
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- /Team Section -->
+
+<!-- Swiper Styles and Script -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const teamSwiper = new Swiper('.team-slider', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
   
 
     <!-- Team 2 Section -->
