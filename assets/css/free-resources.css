@@ -629,3 +629,34 @@ body::before {
     margin-left: 6%;
   }
 }
+
+/*really small screens */
+/*
+@media (max-width: 414px) {
+  .info-section {
+  padding: 20px 10px 50px;
+  }
+  
+  .info-section h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  }
+  
+  .info-section p {
+  font-size: 0.9rem;
+  max-width: 100%;
+  text-align: center;
+  }
+  
+  .tagline1 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  }
+  
+  .btn-style1,
+  .btn-style2 {
+  font-size: 0.9rem;
+  padding: 15px 20px;
+  }
+  } 
+  */

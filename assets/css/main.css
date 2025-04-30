@@ -1992,5 +1992,42 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# really small screens
 --------------------------------------------------------------*/
+/*
+@media (max-width: 414px) {
+  .hero {
+  padding: 40px 10px;
+  flex-direction: column;
+  text-align: center;
+  }
+  
+  .hero h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  }
+  
+  .hero p {
+  font-size: 14px;
+  line-height: 1.4;
+  }
+  
+  .hero .btn-get-started {
+  font-size: 12px;
+  padding: 10px 20px;
+  }
+  
+  .hero #social1,
+  .hero #social2 {
+  margin-top: 20px;
+  margin-right: 0;
+  font-size: 10px;
+  padding: 8px 15px;
+  }
+  
+  .hero #social1 i,
+  .hero #social2 i {
+  font-size: 20px;
+  }
+  }
+  */
