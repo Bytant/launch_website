@@ -1612,6 +1612,14 @@ section,
   position: relative;
 }
 
+@media (max-width: 767px) {
+  #team > .container {
+    max-width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
 .team .member .pic {
   overflow: hidden;
   margin-bottom: 50px;
